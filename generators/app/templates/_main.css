@@ -1,0 +1,10 @@
+/* Styles for <%= _.slugify(siteTitle) %> */
+body{
+	background: fefefe;
+}
+.slim{
+	max-width:760px;
+} 
+.center{
+	text-align:center;
+}

@@ -1,0 +1,63 @@
+{
+  "name": "generator-mean-app",
+  "version": "1.0.0",
+  "description": "Gerador MEAN CRUD com base no Yeoman generators usando o NPM (gerenciador de pacotes do Node.js) e o Bower.",
+  "homepage": "",
+  "author": {
+    "name": "Paulo Sérgio da Silva",
+    "email": "pss1suporte@gmail.com",
+    "url": ""
+  },
+  "files": [
+    "generators"
+  ],
+  "main": "generators/index.js",
+  "keywords": [
+    "MEAN",
+    "MongoDB",
+    "Express",
+    "AngularJS",
+    "Node.js",
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "lodash": "^4.17.4",
+    "mkdirp": "^0.5.1",
+    "path": "^0.12.7",
+    "shelljs": "^0.7.6",
+    "util": "^0.10.3",
+    "yeoman-generator": "^1.0.0",
+    "yosay": "^1.2.1"
+  },
+  "devDependencies": {
+    "yeoman-test": "^1.6.0",
+    "yeoman-assert": "^2.2.1",
+    "eslint": "^3.1.1",
+    "eslint-config-xo-space": "^0.15.0",
+    "gulp": "^3.9.0",
+    "gulp-eslint": "^3.0.1",
+    "gulp-exclude-gitignore": "^1.0.0",
+    "gulp-line-ending-corrector": "^1.0.1",
+    "gulp-istanbul": "^1.0.0",
+    "gulp-mocha": "^3.0.1",
+    "gulp-plumber": "^1.0.0",
+    "gulp-nsp": "^2.1.0",
+    "gulp-coveralls": "^0.1.0"
+  },
+  "eslintConfig": {
+    "extends": "xo-space",
+    "env": {
+      "mocha": true
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pssilva/generator-mean-app.git"
+  },
+  "scripts": {
+    "prepublish": "gulp prepublish",
+    "test": "gulp"
+  },
+  "license": "MIT"
+}

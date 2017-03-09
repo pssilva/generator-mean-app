@@ -1,0 +1,51 @@
+{
+  "name": "<%= projectName %>",
+  "version": "1.0.0",
+  "description": "<%= description %>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/<%= gitUser %>/<%= projectName %>.git"
+  },
+  "keywords": [
+    "MEAN",
+    "MongoDB",
+    "Express",
+    "AngularJS",
+    "Node.js"
+  ],
+  "author": "<%= author %>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/<%= gitUser %>/<%= projectName %>/issues"
+  },
+  "homepage": "https://github.com/<%= gitUser %>/<%= projectName %>#readme",
+  "dependencies": {
+    "bluebird": "^2.9.34",
+    "body-parser": "~1.8.0",
+    "compression": "~1.0.11",
+    "connect-flash": "^0.1.1",
+    "ejs": "~1.0.0",
+    "express": "^4.14.1",
+    "express-session": "~1.7.6",
+    "method-override": "~2.2.0",
+    "mongoose": "~4.8.5",
+    "morgan": "~1.3.0",
+    "nodeunit": "^0.11.0",
+    "passport": "~0.2.1",
+    "passport-facebook": "^2.1.1",
+    "passport-google-oauth": "^1.0.0",
+    "passport-local": "^1.0.0",
+    "passport-twitter": "^1.0.4"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-concat": "^1.0.1"
+  },
+  "params": {
+    "path_strutucture": "v"
+  }
+}
