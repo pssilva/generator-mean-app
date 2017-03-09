@@ -1,24 +1,23 @@
-<<<<<<< HEAD
-
-# generator-mean-crud [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+# generator-mean-app [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
 > Gerador de projeto Yeoman meanCRUD.
 
-# generator-mean-crud
-> Gerador com base no Yeoman generators usando o NPM (gerenciador de pacotes do Node.js) e o Bower.
+
+# generator-mean-app
+> Gerador MEAN App com base no Yeoman generators usando o NPM (gerenciador de pacotes do Node.js) e o Bower.
 
 ## Installation
 
-First, install [Yeoman](http://yeoman.io) and generator-mean-crud using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
+First, install [Yeoman](http://yeoman.io) and generator-mean-app using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
 
 ```bash
 npm install -g yo
-npm install -g generator-mean-crud
+npm install -g generator-mean-app
 ```
 
 Then generate your new project:
 
 ```bash
-yo mean-crud
+yo mean-app
 ```
 
 ## Getting To Know Yeoman
@@ -33,16 +32,12 @@ yo mean-crud
 MIT © [Paulo Sérgio da Silva]()
 
 
-[npm-image]: https://badge.fury.io/js/generator-mean-crud.svg
-[npm-url]: https://npmjs.org/package/generator-mean-crud
-[travis-image]: https://travis-ci.org/pssilva/generator-mean-crud.svg?branch=master
-[travis-url]: https://travis-ci.org/pssilva/generator-mean-crud
-[daviddm-image]: https://david-dm.org/pssilva/generator-mean-crud.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/pssilva/generator-mean-crud
-[coveralls-image]: https://coveralls.io/repos/pssilva/generator-mean-crud/badge.svg
-[coveralls-url]: https://coveralls.io/r/pssilva/generator-mean-crud
+[npm-image]: https://badge.fury.io/js/generator-mean-app.svg
+[npm-url]: https://npmjs.org/package/generator-mean-app
+[travis-image]: https://travis-ci.org/pssilva/generator-mean-app.svg?branch=master
+[travis-url]: https://travis-ci.org/pssilva/generator-mean-app
+[daviddm-image]: https://david-dm.org/pssilva/generator-mean-app.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org/pssilva/generator-mean-app
+[coveralls-image]: https://coveralls.io/repos/pssilva/generator-mean-app/badge.svg
+[coveralls-url]: https://coveralls.io/r/pssilva/generator-mean-app
 
-=======
-# generator-mean-app
-Gerador MEAN App com base no Yeoman generators usando o NPM (gerenciador de pacotes do Node.js) e o Bower.
->>>>>>> b3397fa29f23823e5c86d526c0b24ff5ed5f1a0b
