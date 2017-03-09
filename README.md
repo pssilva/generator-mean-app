@@ -1,8 +1,4 @@
 # generator-mean-app-crud [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
-> Gerador de projeto Yeoman meanCRUD.
-
-
-# generator-mean-app-crud
 > Gerador MEAN App com base no Yeoman generators usando o NPM (gerenciador de pacotes do Node.js) e o Bower.
 
 ## Installation
