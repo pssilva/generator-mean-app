@@ -1,6 +1,5 @@
 'use strict';
 var MeanApp = require('../meanApp.js');
-var MeanAppFiles = require('../createApp/createAppFiles.js');
 
 
 var MyGenerator = MeanApp.extend({
@@ -242,6 +241,13 @@ module.exports = class extends MeanApp {
 
       this._private_createAppFilesCommun();
 
+
+      this.fs.copyTpl(
+        this.templatePath('_bowerrc'),
+        this.destinationPath('.bowerrc'),
+            pathLib: "app/core/client/lib",
+      );
+
       this.fs.copyTpl(
         this.templatePath('_index.server.routes.js'),
         this.destinationPath('app/core/server/routes/index.server.routes.js'),{
@@ -326,6 +332,81 @@ module.exports = class extends MeanApp {
   _private_createAppFilesHorizontal(){
 
       this._private_createAppFilesCommun();
+
+      this.fs.copyTpl(
+        this.templatePath('_bowerrc'),
+        this.destinationPath('.bowerrc'),
+            pathLib: "bower_components",
+      );
+
+      this.fs.copyTpl(
+        this.templatePath('_index.server.routes.js'),
+        this.destinationPath('app/routes/index.server.routes.js'),{
+            projectName: this.options.projectName,
+            featureName: this.options.featureName
+        }
+      );
+
+      this.fs.copy(
+        this.templatePath('_user.server.model.js'),
+        this.destinationPath('app/models/user.server.model.js')
+      );
+
+      this.fs.copy(
+        this.templatePath('_index.server.controller.js'),
+        this.destinationPath('app/controllers/index.server.controller.js')
+      );
+
+      this.fs.copyTpl(
+        this.templatePath('_index.ejs'),
+        this.destinationPath('app/views/index.ejs'),{
+            featureName: this.options.featureName,
+            modelName: this.options.modelName,
+            title: "Título do Site",
+            user: "Nome do usuário"
+        }
+      );
+
+      this.fs.copyTpl(
+        this.templatePath('_mongoose.js'),
+        this.destinationPath('config/mongoose.js'),{
+            projectName: this.options.projectName,
+            featureName: this.options.featureName
+        }
+      );
+
+      this.fs.copyTpl(
+        this.templatePath('_development.js'),
+        this.destinationPath('config/env/development.js'),{
+            projectName: this.options.projectName,
+            featureName: this.options.featureName
+        }
+      );
+
+      this.fs.copyTpl(
+        this.templatePath('_local.js'),
+        this.destinationPath('config/strategies/local.js'),{
+            projectName: this.options.projectName,
+            featureName: this.options.featureName
+        }
+      );
+
+      this.fs.copyTpl(
+        this.templatePath('_express.js'),
+        this.destinationPath('config/express.js'),{
+            projectName: this.options.projectName
+        }
+      );
+
+      this.fs.copy(
+        this.templatePath('_config.js'),
+        this.destinationPath('app/config/config.js')
+      );
+
+      this.fs.copy(
+        this.templatePath('_application.js'),
+        this.destinationPath('public/application.js')
+      );
   }
 
   /**
@@ -354,11 +435,6 @@ module.exports = class extends MeanApp {
       this.fs.copy(
         this.templatePath('_jshintrc'),
         this.destinationPath('.jshintrc')
-      );
-
-      this.fs.copy(
-        this.templatePath('_bowerrc'),
-        this.destinationPath('.bowerrc')
       );
 
       this.fs.copyTpl(
