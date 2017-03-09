@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # generator-mean-crud [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
 > Gerador de projeto Yeoman meanCRUD.
@@ -41,3 +42,7 @@ MIT © [Paulo Sérgio da Silva]()
 [coveralls-image]: https://coveralls.io/repos/pssilva/generator-mean-crud/badge.svg
 [coveralls-url]: https://coveralls.io/r/pssilva/generator-mean-crud
 
+=======
+# generator-mean-app
+Gerador MEAN App com base no Yeoman generators usando o NPM (gerenciador de pacotes do Node.js) e o Bower.
+>>>>>>> b3397fa29f23823e5c86d526c0b24ff5ed5f1a0b
