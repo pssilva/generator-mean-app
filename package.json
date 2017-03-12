@@ -1,6 +1,6 @@
 {
   "name": "generator-mean-app-crud",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Gerador MEAN CRUD com base no Yeoman generators usando o NPM (gerenciador de pacotes do Node.js) e o Bower.",
   "homepage": "",
   "author": {

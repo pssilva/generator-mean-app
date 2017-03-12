@@ -26,6 +26,7 @@ module.exports = class extends MeanApp {
       'lib',
       'services',
       'views',
+      'themes',
     ];
     
     /**
